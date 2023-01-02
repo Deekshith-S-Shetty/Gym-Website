@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(images/image.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-family: "Baloo Bhai 2", cursive;
+        
+      }
+      header {
+        font-size: 20px;
+        display: flex;
+      }
+      #left {
+        display: inline-block;
+        margin: 10px 50px;
+        width: 115px;
+        text-align: center;
+      }
+      #middle {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+      }
+      #right {
+        float: right;
+        margin: 10px 50px;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 0px;
+      }
+      ul li {
+        float: left;
+        margin: 0px 30px;
+      }
+      #left img {
+        width: 70px;
+        filter: invert(100%);
+        margin-bottom: -13px;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+      }
+      li a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+      .btn {
+        text-decoration: none;
+        background-color: #6a6767;
+        border-radius: 10px;
+        padding: 8px;
+        color: #d2d2d2;
+        border: 1px solid grey;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      .btn:hover {
+        background-color: grey;
+        color: white;
+      }
+      .enroll {
+        display: block;
+        border: 2px solid rgb(67, 63, 63);
+        padding: 5px;
+        border-radius: 10px;
+        margin: 100px auto 0px;
+        width: 35%;
+        text-align: center;
+      }
+      form input,
+      form button {
+        text-align: center;
+        width: 500px;
+        margin: 6px 7px;
+        border-radius: 5px;
+        border: none;
+        padding: 7px 5px;
+        font-family: "Baloo Bhai 2", cursive;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="left">
+        <img src="./images/logo.jpg" alt="Error showing photo" />
+        <span>Fitness Gym</span>
+      </div>
+      <div id="middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div id="right">
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <form class="enroll">
+      <div>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your Name"
+        />
+      </div>
+      <div>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Enter your number"
+        />
+      </div>
+      <div>
+        <input type="number" name="age" id="age" placeholder="Enter your Age" />
+      </div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div>
+        <input type="text" name="gender" placeholder="Enter your Gender" />
+      </div>
+      <button class="btn" name="enroll">Entoll Now</button>
+    </form>
+  </body>
+</html>
